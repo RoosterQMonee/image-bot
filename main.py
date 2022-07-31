@@ -9,7 +9,7 @@ async def on_ready(): print("Bot is online.")
 
 @client.command()
 async def download(ctx):
-		messages = await ctx.message.channel.history(limit=200).flatten()
+		messages = await ctx.message.channel.history(limit=500).flatten()
 	
 		for ms in messages:
 			if len(ms.attachments) > 0:
